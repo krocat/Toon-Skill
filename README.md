@@ -19,6 +19,9 @@ Whilst the skill will return weather forecasts, these will default to either Wes
 
 ## Setup
 
+This step-by-step instruction is based on this instruction by tartanguru:
+https://github.com/tartanguru/alexa-google-search/blob/master/README.md
+
 To run the skill you need to do three things:-
 
 1. download the files from github
@@ -27,7 +30,7 @@ To run the skill you need to do three things:-
 
 ### Download code from github
 
-1. Click on the green "Clone or download" button just under the yellow bar
+1. Click on the green "Clone or download" button
 2. Click download ZIP
 3. Unzip the file to a known place on your hard-drive
 
@@ -79,14 +82,14 @@ The contents of the zip file should be as follows:
 
     ```
         cachetools ( the folder and its contents )
-		cachetools-2.0.0.dist-info ( the folder and its contents )
-		requests ( the folder and its contents )
-		requests-2.13.0.dist-info ( the folder and its contents )
-		toonlib ( the folder and its contents )
-		toonlib-1.0.0-py2.7.egg-info ( the folder and its contents )
-		settings.py
+        cachetools-2.0.0.dist-info ( the folder and its contents )
+        requests ( the folder and its contents )
+        requests-2.13.0.dist-info ( the folder and its contents )
+        toonlib ( the folder and its contents )
+        toonlib-1.0.0-py2.7.egg-info ( the folder and its contents )
+        settings.py
         Toonskill.py
-		
+
     ``` 
 Then update the lambda source zip file with this change and upload to lambda again, this step makes sure the lambda function only serves request from authorized source.
 
