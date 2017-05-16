@@ -1,0 +1,94 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "GetStatus",
+      "samples": [
+        "status",
+        "thermostat status",
+        "what is the thermostat status",
+        "What is the temperature",
+        "what is the room temperature",
+        "what is the current power usage",
+        "what is the power usage",
+        "how much gas did we use",
+        "what is today's gas usage"
+      ],
+      "slots": []
+    },
+    {
+      "name": "SetProgram",
+      "samples": [
+        "set Tohn to {program}",
+        "set the program to {program}",
+        "set the thermostat to {program}",
+        "set to {program}",
+        "set {program}"
+      ],
+      "slots": [
+        {
+          "name": "program",
+          "type": "LIST_OF_PROGRAMS",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "SetTemperature",
+      "samples": [
+        "set the temperature to {temps}",
+        "set the temperature to {temps} degrees"
+      ],
+      "slots": [
+        {
+          "name": "temps",
+          "type": "AMAZON.NUMBER",
+          "samples": []
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "LIST_OF_PROGRAMS",
+      "values": [
+        {
+          "name": {
+            "value": "Comfort"
+          }
+        },
+        {
+          "name": {
+            "value": "Home"
+          }
+        },
+        {
+          "name": {
+            "value": "Away"
+          }
+        },
+        {
+          "name": {
+            "value": "Sleep"
+          }
+        },
+        {
+          "name": {
+            "value": "Holiday"
+          }
+        }
+      ]
+    }
+  ]
+}
